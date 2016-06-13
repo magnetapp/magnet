@@ -21,7 +21,17 @@ function create(hidden) {
     transparent: true,
     alwaysOnTop: true
   });
-  
+
+  // let renderedWin;
+  // let winHeight;
+    
+  // if (process.platform === 'darwin') {
+  //   const rendererProc = require('electron').ipcRenderer;
+  //   renderedWin = rendererProc.document.getElementById('main-window');
+  //   winHeight = renderedWin.clientHeight - (renderedWin.window.screen.height - renderedWin.window.screen.availHeight) + 'px';
+  //   renderedWin.setAttribute('style', 'height: ' + winHeight);
+  // }
+
   // Load-up the UI
   win.loadURL('http://localhost:4200/');
   

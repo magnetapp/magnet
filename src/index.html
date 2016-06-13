@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <title>Magnet</title>
   <base href="/">
-  
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-      
+
   {{#unless environment.production}}
   <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
   {{/unless}}
@@ -16,22 +14,12 @@
 </head>
 <body>
   <magnet-app>Loading...</magnet-app>
-    {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
-    <script>
-      System.import('system-config.js').then(function () {
-        System.import('main');
-      }).catch(console.error.bind(console));
-    </script>
-    <script>
-      const remote = require('electron').remote;
-      let win;
-      let winHeight;
-        
-      if (remote.getGlobal('platform') !== 'darwin') {
-        win = document.getElementById('main-window');
-        winHeight = win.clientHeight - (window.screen.height - window.screen.availHeight) + 'px';
-        win.setAttribute('style', 'height: ' + winHeight); 
-      }
-    </script>
+  
+  {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
+  <script>
+    System.import('system-config.js').then(function () {
+      System.import('main');
+    }).catch(console.error.bind(console));
+  </script>
 </body>
 </html>
