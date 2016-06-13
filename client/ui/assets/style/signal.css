@@ -1,0 +1,190 @@
+html, 
+body {
+  background-color: transparent;
+  margin: 0;
+  padding: 0 5px 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  font-size: 12px;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+body > .frame {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  left: 5px;
+  background-color: #fafafa;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+}
+
+.sig-banner {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.35);
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+  font-size: 14px;
+  color: #fff;
+  background-color: #99745A;
+  cursor: pointer;
+}
+
+.sig-controls {
+  position: absolute;
+  /*height: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: right;
+  padding: 0 10px;*/
+}
+
+.sig-controls img.control {
+  display: inline-block;
+  fill: #fff;
+  height: 16px;
+  width: 16px;
+}
+
+.sig-header {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 0 10px;
+}
+
+.sig-body {
+  padding: 0 15px 0;
+}
+
+.sig-card-container {
+  padding-top: 35px;
+}
+
+.sig-card {
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.sig-action {
+  display: block;
+  margin: -25px auto;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.sig-action:hover {
+  transform: scale(1.1);
+}
+
+.sig-gradient-white {
+  background: linear-gradient(180deg, #fff 0%, #eee 100%);
+}
+
+.sig-gradient-grapefruit {
+  background: linear-gradient(135deg, #ED5565 25%, #DA4453 100%);
+}
+
+.sig-gradient-foo {
+  background: linear-gradient(135deg, #dc2430 0%, #7b4397 100%);
+}
+
+.sig-gradient-kyoto {
+  background: linear-gradient(135deg, #ffc500 0%, #c21500 100%);
+}
+
+.sig-gradient-bell {
+  background: linear-gradient(135deg, #F1C40F 0%, #F39C12 100%);
+}
+
+.sig-gradient-aubergine {
+  background: linear-gradient(135deg, #AA076B 0%, #61045F 100%);
+}
+
+.sig-gradient-bloodymary {
+  background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%);
+}
+
+.sig-gradient-sky {
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+}
+
+/*
+  Animation layers
+*/
+
+.animated {
+  transition: background 500ms ease-out;
+}
+
+.sig-animation {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+}
+
+.sig-layer-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1000ms ease-out;
+}
+
+.sig-layer-background.show {
+  opacity: 1;
+}
+
+.sig-layer-background.day {
+  background-color: #ffb347;
+  background: linear-gradient(55deg, #ffb347 0%, #ffcc33 100%);
+}
+
+.sig-layer-background.night {
+  background-color: #101;
+  background: linear-gradient(55deg, #101 0%, #33346D 100%);
+}
+
+.sig-layer-hills,
+.sig-layer-hills.day {
+  background-image: url(../images/hills.png);
+  background-size: 680px 150px;
+  background-position: 0px 0;
+  height: 150px;
+  width: 680px;
+  z-index: 2;
+}
+
+.sig-layer-sky,
+.sig-layer-sky.day {
+  background-image: url(../images/sunandmoon.png);
+  background-size: 340px 300px;
+  background-position: 0 -150px;
+  height: 300px;
+  width: 340px;
+  z-index: 1;
+}
+
+.sig-layer-hills.night {
+  background-position: -340px 0;
+}
+
+.sig-layer-sky.night {
+  background-position: 0 0;
+}

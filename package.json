@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
+  "main": "app.js",
   "scripts": {
-    "start": "ng server",
+    "start": "ng serve & electron --debug=5858 .",
     "postinstall": "typings install",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
@@ -29,6 +30,8 @@
   "devDependencies": {
     "angular-cli": "^1.0.0-beta.4",
     "codelyzer": "0.0.14",
+    "electron-debug": "^1.0.0",
+    "electron-prebuilt": "^1.2.2",
     "ember-cli-inject-live-reload": "^1.4.0",
     "jasmine-core": "^2.4.1",
     "jasmine-spec-reporter": "^2.4.0",

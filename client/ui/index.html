@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title></title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+    <!-- Place favicon.ico in the root directory -->
+    
+    <!-- Fonts -->
+    <!--<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/style/signal.css">
+        
+    </head>
+    <body>
+      <div id="main-window" class="frame sig-gradient-white">
+        <!--<div class="sig-controls">-->
+          <!--<img src="assets/images/cancel.svg" class="control" alt="close" title="close" />-->
+        <!--</div>-->
+        <div class="sig-banner">
+          <div class="sig-layer-background night show"></div>
+          <div class="sig-layer-background day show"></div>
+          <div class="sig-animation sig-layer-sky animated"></div>
+          <div class="sig-animation sig-layer-hills animated"></div>
+        </div>
+         
+        <div class="sig-body">
+          <!--<img src="assets/images/bell-icon.png" class="sig-action" alt="alert" title="alert" />-->
+          <div class="sig-card-container">
+            <div class="sig-card">Hello, world! foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz.</div>
+            <div class="sig-card">Hello, world! foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz.</div>
+            <div class="sig-card">Hello, world! foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz foo bar baz.</div>
+          </div>
+        </div> 
+      </div>
+      
+      <script>
+        
+        const remote = require('electron').remote;
+        let win;
+        let winHeight;
+        
+        if (remote.getGlobal('platform') !== 'darwin') {
+          win = document.getElementById('main-window');
+          winHeight = win.clientHeight - (window.screen.height - window.screen.availHeight) + 'px';
+          win.setAttribute('style', 'height: ' + winHeight); 
+        }
+      </script>
+    </body>
+</html>
