@@ -127,7 +127,7 @@ body > .frame {
 */
 
 .animated {
-  transition: background 500ms ease-out;
+  transition: background 400ms ease-in-out;
 }
 
 .sig-animation {
@@ -144,7 +144,7 @@ body > .frame {
   left: 0;
   opacity: 0;
   z-index: 0;
-  transition: opacity 1000ms ease-out;
+  transition: opacity 400ms ease-in-out;
 }
 
 .sig-layer-background.show {
@@ -163,7 +163,7 @@ body > .frame {
 
 .sig-layer-hills,
 .sig-layer-hills.day {
-  background-image: url(../images/hills.png);
+  background-image: url(app/assets/images/hills.png);
   background-size: 680px 150px;
   background-position: 0px 0;
   height: 150px;
@@ -173,7 +173,7 @@ body > .frame {
 
 .sig-layer-sky,
 .sig-layer-sky.day {
-  background-image: url(../images/sunandmoon.png);
+  background-image: url(app/assets/images/sunandmoon.png);
   background-size: 340px 300px;
   background-position: 0 -150px;
   height: 300px;

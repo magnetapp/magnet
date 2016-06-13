@@ -1,0 +1,6 @@
+<div class="sig-banner" (click)="toggle()">
+  <div class="sig-layer-background night" [ngClass]="{show: !isDay}"></div>
+  <div class="sig-layer-background day" [ngClass]="{show: isDay}"></div>
+  <div class="sig-animation sig-layer-sky animated" [ngClass]="{day: isDay, night: !isDay}"></div>
+  <!--<div class="sig-animation sig-layer-hills animated" [ngClass]="{day: isDay, night: !isDay}"></div>-->
+</div>

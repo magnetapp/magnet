@@ -18,11 +18,11 @@ function create(hidden) {
     x: screen.size.width - 349,
     y: screen.size.height - 500,
     frame: false,
-    //transparent: true
+    transparent: true,
+    alwaysOnTop: true
   });
   
   // Load-up the UI
-  //win.loadURL('file://' + __dirname + '../../../src/index.html');
   win.loadURL('http://localhost:4200/');
   
   // Show it!
