@@ -3,11 +3,7 @@ body {
   background-color: transparent;
   margin: 0;
   padding: 0 5px 5px;
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-family: Arial, sans-serif;
-  color: #555;
-  font-size: 12px;
-  font-weight: 700;
+  /*font-family: 'Open Sans', sans-serif;*/  
   overflow: hidden;
 }
 
@@ -21,6 +17,10 @@ body {
   background-color: #fafafa;
   overflow: hidden;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+  font-family: Arial, sans-serif;
+  color: #555;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .sig-banner {
