@@ -30,7 +30,8 @@ body {
   margin-top: 0;
   font-size: 14px;
   color: #fff;
-  background-color: #99745A;
+  /*background-color: #99745A;*/
+  background-color: #fafafa;
   cursor: pointer;
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .sig-card-container {
-  padding-top: 35px;
+  padding-top: 20px;
 }
 
 .sig-card {
@@ -121,7 +122,18 @@ body {
 }
 
 /*
-  Animation layers
+ * Status
+*/
+
+.mag-status {
+  display: block;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * Animation layers
 */
 
 .animated {
