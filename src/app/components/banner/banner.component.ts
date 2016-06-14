@@ -22,7 +22,7 @@ import { Routes, ROUTER_DIRECTIVES } from '@angular/router';
   selector: 'banner',
   templateUrl: 'banner.component.html',
   directives: [ROUTER_DIRECTIVES, NgClass],
-  styleUrls: ['./../assets/style/signal.css']
+  styleUrls: ['./../../assets/style/signal.css']
 })
 
 export class BannerComponent {

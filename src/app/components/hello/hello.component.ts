@@ -3,7 +3,7 @@ import { Component, Inject } from '@angular/core';
 @Component({
   moduleId: module.id,
   templateUrl: 'hello.component.html',
-  styleUrls: ['./../assets/style/signal.css']
+  styleUrls: ['./../../assets/style/signal.css']
 })
 export class HelloComponent {
   

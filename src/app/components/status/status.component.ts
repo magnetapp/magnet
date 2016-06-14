@@ -6,7 +6,7 @@ import { NgClass } from '@angular/common';
   selector: 'status',
   templateUrl: 'status.component.html',
   directives: [NgClass],
-  styleUrls: ['./../assets/style/signal.css']
+  styleUrls: ['./../../assets/style/signal.css']
 })
 
 export class StatusComponent {
