@@ -11,12 +11,12 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 0;
   bottom: 0;
-  left: 5px;
+  left: 0;
   background-color: #fafafa;
   overflow: hidden;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+  /*box-shadow: 2px 2px 5px rgba(0,0,0,0.35);*/
   font-family: Arial, sans-serif;
   color: #555;
   font-size: 12px;
@@ -26,7 +26,7 @@ body {
 .sig-banner {
   position: relative;
   overflow: hidden;
-  height: 150px;
+  height: 180px;
   margin-top: 0;
   border-bottom: 1px solid rgba(0,0,0,0.35);
   box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
@@ -71,10 +71,10 @@ body {
 
 .sig-card {
   display: block;
-  background-color: #fff;
+  /*background-color: #fff;*/
   border-radius: 4px;
   padding: 10px;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  /*box-shadow: 1px 1px 2px rgba(0,0,0,0.2);*/
   margin-bottom: 10px;
 }
 
@@ -175,9 +175,9 @@ body {
 .sig-layer-sky,
 .sig-layer-sky.day {
   background-image: url(app/assets/images/sunandmoon.png);
-  background-size: 340px 300px;
-  background-position: 0 -150px;
-  height: 300px;
+  background-size: 340px 360px;
+  background-position: 0 -180px;
+  height: 360px;
   width: 340px;
   z-index: 1;
 }
