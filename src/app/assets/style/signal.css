@@ -31,7 +31,7 @@ body {
   font-size: 14px;
   color: #fff;
   /*background-color: #99745A;*/
-  background-color: #fafafa;
+  background-color: #111;
   cursor: pointer;
 }
 
@@ -197,4 +197,21 @@ body {
 
 .sig-layer-sky.night {
   background-position: 0 0;
+}
+
+/*
+ * Hello Component
+*/
+
+.mag-screen {
+  display: block;
+  height: 180px;
+  background: linear-gradient(0deg, #000 0%, #1a1a1a 100%);
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  margin-top: -36px;
+  object-fit: cover;
 }
