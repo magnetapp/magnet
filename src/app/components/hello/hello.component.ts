@@ -11,6 +11,7 @@ export class HelloComponent {
   
   _window: any;
   webrtcObj: any;
+  turnServer: any;
 
   constructor(private window: Window, private webrtcService: WebrtcService) {
     
@@ -21,6 +22,10 @@ export class HelloComponent {
       autoRequestMedia: true
     });
 
-    this.webrtcService.initiate();
+    this.webrtcService.initiate().subscribe(turnServer => this.turnServer = turnServer);
+
+    setTimeout(() => {
+      console.log(this.turnServer);
+    }, 5000);
   }
 }
