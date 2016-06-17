@@ -15,6 +15,10 @@ bootstrap(MagnetAppComponent, [
   ROUTER_PROVIDERS,
   HTTP_PROVIDERS,
   provide(Window, { useValue: window }),
-  defaultFirebase('https://magnet-26f7f.firebaseio.com')
+  defaultFirebase({
+    apiKey: "AIzaSyBsGla1MaUKHth1LDplGIj-F4puEPUKrv8",
+    authDomain: "magnet-26f7f.firebaseapp.com",
+    databaseURL: "https://magnet-26f7f.firebaseio.com",
+    storageBucket: "magnet-26f7f.appspot.com",
+  })
 ]);
-
