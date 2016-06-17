@@ -25,5 +25,10 @@ import { Routes, ROUTER_DIRECTIVES } from '@angular/router';
   styleUrls: ['assets/style/signal.css']
 })
 export class MagnetAppComponent {
-  title = 'foo';
+  
+  title: string;
+
+  constructor() {
+    this.title = 'foo';
+  }
 }
